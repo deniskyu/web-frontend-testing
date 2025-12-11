@@ -1,0 +1,195 @@
+.user-orders{
+    margin: 60px 0;
+}
+
+.user-order-table{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 0.75fr;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 15px;
+    border: 1px solid #cacaca;
+    font-size: 15px;
+    text-align: center;
+    color: #6d6d6d;
+    font-size: 16px;
+    position: relative;
+}
+
+.user-order-table-old{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 15px;
+    border: 1px solid #cacaca;
+    font-size: 15px;
+    text-align: center;
+    color: #6d6d6d;
+    font-size: 16px;
+    position: relative; 
+}
+
+.user-orders-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0px 0 40px 0;
+}
+
+.user-orders-text h1{
+    font-size: max(1.5vw, 24px);
+    color: black;
+    font-weight: 700;
+}
+
+.user-orders-order-h2{
+    font-size: max(1.2vw, 18px);
+    color: #323232;
+    font-weight: 500;
+    text-align: start;
+    margin-top: 30px;
+}
+
+.user-orders-text p{
+    font-size: 14px;
+    color: #717171;
+    font-weight: 500;
+}
+
+.user-order-info-old-long{
+    width: 90%;
+}
+
+.user-orders-orders{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.user-orders-delivery-logo{
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    width: 30px;
+    height: 28px;
+}
+
+.user-order-table-title{
+    background-color: #f9f9f9;
+    color: #727272;
+}
+
+.user-order-table span{
+    font-weight: bold;
+}
+
+.user-order-status{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+.user-order-status p{
+    font-weight: 500;
+    color: tomato;
+    font-size: 16px;
+    animation: colorChange 1s forwards;
+}
+
+.user-order-status button{
+    padding: 8px 16px;
+    width: 60%;
+    border: none;
+    background-color: #eaaf1b;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.user-order-status button:hover{
+    background-color: #ac8521;
+}
+
+.user-order-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;  
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    margin: 12px 2px;
+}
+
+.user-order-table-title p{
+    font-weight: bold;
+}
+
+.user-orders-cross{
+    font-weight: bold;
+    font-size: 18px;
+    color: tomato;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.user-orders-none-p{
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.user-orders-bottom-text{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.user-orders-bottom-text p{
+    text-align: center;
+    color: gray;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@keyframes colorChange {
+    from{
+        color: green;
+    }
+    to{
+        color: tomato;
+    }
+}
+
+@media (max-width: 768px){
+    .user-order-status button{
+        width: 100%;
+    }
+    .user-order-table{
+        font-size: 13px;
+    }
+    .user-order-info-old-long{
+        width: 90%;
+    }
+    .user-orders-none-p{
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .user-orders-text h1{
+        width: 80%;
+    }
+    
+    .user-orders-text p{
+        width: 80%;
+    }
+
+    .user-orders-order-h2{
+        text-align: center;
+    }
+}

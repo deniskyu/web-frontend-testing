@@ -1,0 +1,45 @@
+.complete-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2e7d32; /* dark green */
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .complete-container h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .complete-container p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  .complete-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1em;
+  }
+  
+  @media (max-width: 480px) {
+    .complete-container h1 {
+      font-size: 1.5em;
+    }
+  
+    .complete-container p {
+      font-size: 1em;
+    }
+  
+    .complete-container img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+.admin-content{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+*{
+    font-family: Zalando Sans SemiExpanded;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.flex-col{
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}

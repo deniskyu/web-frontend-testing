@@ -1,0 +1,38 @@
+.info-page{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 90px 0;
+}
+
+.info-page-container{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.info-page-container h1{
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #080808;
+    font-size: max(2.2vw, 26px);
+}
+
+.info-page-container h3{
+    font-weight: 500;
+    color: #080808;
+    font-size: max(1.5vw, 18px);
+}
+
+
+.info-page-container p{
+    color: #404040;
+    font-weight: 300;
+    color: #505050;
+}
+
+@media (max-width: 1050px){
+    .info-page{
+        text-align: center;
+    }
+}

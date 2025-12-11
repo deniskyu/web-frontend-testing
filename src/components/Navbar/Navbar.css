@@ -1,0 +1,238 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vh 3.4vw;
+    animation: navbarSlide 1s forwards;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 4px 10px -2px rgba(147, 147, 147, 0.6);
+}
+
+.navbar-logo{
+    width: auto;
+    height: 70px;
+}
+
+.navbar-buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.navbar-buttons{
+    color: #495579;
+    font-size: max(1vw, 16px);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.navbar-buttons:hover{
+    color: tomato;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar .active-button{
+    text-decoration: underline;
+}
+
+.navbar-right-container{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
+
+.navbar-right-container img{
+    width: auto;
+    height: 32px;
+    transition: 0.2s;
+}
+
+.navbar-right-container img:hover{
+    height: 33px;
+    cursor: pointer;
+}
+
+.navbar .navbar-orders-icon{
+    height: 36px;
+}
+
+.navbar .navbar-orders-icon:hover{
+    height: 37px;
+}
+
+.navbar-right-container button{
+    height: auto;
+    padding: 14px 40px;
+    text-align: center;
+    background-color: #eaaf1b;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.navbar-right-container button:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.navbar-username{
+    font-size: max(1.1vw, 17.5px);
+    font-weight: 500;
+    color: #eaaf1b;
+    transition: 0.2s;
+}
+
+
+.navbar-username:hover{
+    color: tomato;
+    cursor: pointer;
+}
+
+.navbar-username-div {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-username-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    min-width: 160px;
+    z-index: 2000;
+}
+
+.navbar-username-dropdown p {
+    padding: 10px 18px;
+    margin: 0;
+    font-size: 15px;
+    color: #495579;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+.navbar-username-dropdown p:hover {
+    background-color: #f1f1f1;
+    color: tomato;
+    cursor: pointer;
+}
+
+.navbar-basket{
+    position: relative;
+}
+
+.navbar-basket-dot{
+    border-radius: 50%;
+    background-color: tomato;
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    top: -1px;
+    right: -7px;
+}
+
+
+@keyframes navbarSlide{
+    from{
+        transform:translateY(-80px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024px){
+    .navbar{
+        padding: 0.8vh 3.4vw;
+    }
+
+    .navbar-logo{
+        width: auto;
+        height: 64px;
+    }
+    .navbar-buttons-container li{
+        font-size: 15px;
+    }
+    .navbar-right-container img{
+        height: 28px;
+    }
+
+    .navbar-right-container img:hover{
+        height: 29px;
+    }
+
+    .navbar .navbar-orders-icon{
+        height: 30px;
+    }
+
+    .navbar .navbar-orders-icon:hover{
+        height: 31px;
+    }
+
+    .navbar-right-container button{
+        padding: 12px 36px;
+        font-size: 14.5px;
+    }
+
+    .navbar-right-container button:hover{
+        padding: 13px 38px;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar{
+        padding: 1.9vh 6vw;
+    }
+
+    .navbar-logo{
+        width: auto;
+        height: 62px;
+    }
+
+    .navbar-buttons-container{
+        display: none;
+    }
+
+    .navbar-right-container img{
+        height: 26px;
+    }
+
+    .navbar-right-container{
+        gap: 24px;
+    }
+
+    .navbar-right-container img:hover{
+        height: 27px;
+    }
+
+    .navbar .navbar-orders-icon{
+        height: 29px;
+    }
+
+    .navbar .navbar-orders-icon:hover{
+        height: 30px;
+    }
+
+    .navbar-right-container button{
+        padding: 11px 34px;
+        font-size: 14px;
+    }
+
+    .navbar-right-container button:hover{
+        padding: 12px 36px;
+    }
+}

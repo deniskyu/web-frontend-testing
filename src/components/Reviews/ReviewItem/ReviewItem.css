@@ -1,0 +1,34 @@
+.review-item-container{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.review-item-name{
+    color: tomato;
+    font-size: max(1.2vw, 20px);
+    font-weight: 600;
+}
+
+.review-item-description{
+    color: #323232;
+    font-size: 16px;
+    width: 84%;
+}
+
+.review-item-rating-stars-container{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.review-item-rating-stars{
+    height: 20px;
+}
+
+@media (max-width: 768px){
+    .review-item-description{
+        width: 88%;
+    }
+}

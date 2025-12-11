@@ -1,0 +1,124 @@
+.admin-users{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-users-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.admin-users-buttons-button{
+    padding: 10px;
+    border: 1px solid #cacaca;
+    min-width: max(14%, 100px);
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
+.admin-users-buttons-active{
+    cursor:default;
+    background-color: #e8e5e5;
+    color: #313131;
+}
+
+.admin-users-search{
+    padding: 8px;
+    margin-bottom: 6px;
+    width: max(24%, 160px);
+}
+
+.admin-users-list-total{
+    font-weight: 500;
+    font-size: 13px;
+    color: tomato;
+}
+
+.admin-users-table{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr ;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+.admin-users-table-title{
+    background-color: #f9f9f9;
+    color: #727272;
+    font-weight: bold;
+}
+
+.admin-users-email{
+    word-break: break-all;   /* forces long text like email to wrap */
+    text-align: left;   
+}
+
+.admin-users-table p{
+    place-self: center;
+    text-align: center;
+}
+
+.admin-users-delivery-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-users-table-promote-button{
+    border: none;
+    padding: 8px 20px;
+    background-color: tomato;
+    color: white;
+    border-radius: 6px;
+    transition: 0.2s;
+    font-size: 13px;
+    text-align: center;
+    place-self: center;
+
+}
+
+.admin-users-table-promote-button:hover{
+    background-color: rgb(195, 76, 55);
+    cursor: pointer;
+}
+
+.admin-make-admin-button{
+    background-color: rgb(34, 144, 34);
+}
+
+.admin-make-admin-button:hover{
+    background-color: rgb(24, 88, 24);
+}
+
+.admin-users-cross{
+    color: tomato;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.admin-uesrs-cross:hover{
+    color: rgb(118, 43, 30);
+}
+
+@media (max-width: 768px){
+    .admin-users{
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .admin-users-search{
+        width: 100%;
+    }
+}

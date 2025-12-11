@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: 1px 1px 6px #8c8c8c;
+    width: 100%;
+    padding: 8px max(24px, 2vw);
+}
+
+.header-logo{
+    width: auto;
+    height: max(4vw, 50px);
+}
+
+.admin-header-title{
+    font-size: max(1.3vw, 17px);
+    color: #313131;
+    font-weight: 500;
+}
+
+.admin-header-username{
+    font-size: max(1.1vw, 15px);
+    color: #313131;
+    font-weight: 300;
+    margin-right: 12px;
+}
