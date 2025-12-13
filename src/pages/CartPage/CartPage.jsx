@@ -165,7 +165,7 @@ const CartPage = () => {
 
         <div className="delivery-location">
             <h2>Unde vrei să-ți livrăm comanda?</h2>
-            <p>Selectează locația exact pe hartă și, dacă este nevoie, completează detaliile precum număr, bloc, scară sau apartament. Vrem să ajungem la tine fără ocolișuri. 🚗💨</p>
+            <p className='delivery-location-p'>Selectează locația exact pe hartă și, dacă este nevoie, completează detaliile precum număr, bloc, scară sau apartament. Vrem să ajungem la tine fără ocolișuri. 🚗💨</p>
             <LocationPicker setAddress={setAddress} address={address} className='delivery-map'/>
             <p style={{textAlign: 'center', placeSelf: 'center', marginTop: '4px'}}>Livram pe o arie de {assets.aria_de_livrare} km, in estimativ {assets.timp_estimat_livrare}</p>
             {
