@@ -64,7 +64,7 @@ const UserOrders = () => {
                 {
                     orders.map((item, idx) => {
                         if(item.status==='Livrata')
-                            return;
+                            return null;
                         const a = item.address ?? {};
                         const addressString =  
                           `${a.localitate}, ${a.strada} nr${a.numar}` +
@@ -123,7 +123,7 @@ const UserOrders = () => {
                 {
                     orders.map((item, idx) => {
                         if(item.status !== 'Livrata')
-                            return;
+                            return null;
                         const a = item.address ?? {};
                         const addressString =  
                             `${a.localitate}, ${a.strada} nr${a.numar}` +

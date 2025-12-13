@@ -108,7 +108,7 @@ const Add = () => {
     setLoading(true);
     event.preventDefault();
 
-    if(!categoryData || !categoryImage){
+    if(!categoryData.name || !categoryImage){
       toast.error(`Toate campurile trebuie completate.`);
       setCategoryData({
         name: "",
@@ -124,8 +124,10 @@ const Add = () => {
     formData.append("image", categoryImage);
     try{
       const response = await axiosAuthGuard.post(`/api/food/category/add`, formData);
-      if(response.data.success){
+      if(response.data.success){ {
         toast.success(response.data.message);
+        await fetchCategoryList();
+      }
       }else{
         toast.error(response.data.message);
       }
