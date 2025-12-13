@@ -143,7 +143,7 @@ const CartPage = () => {
             <br />
             <hr />
             {
-                !cartBool ? <p style={{marginTop: 30, color: 'grey', fontSize: 18, textAlign: 'center'}}>Cosul tau este gol.</p> :null
+                !cartBool ? <p style={{marginTop: 30, color: 'grey', fontSize: 14, textAlign: 'center'}}>Cosul tau este gol.</p> :null
             }
             {itemList.map((item, index) => {
                 if(cart[item._id] > 0)

@@ -192,4 +192,7 @@
     .user-orders-order-h2{
         text-align: center;
     }
+    .user-order-table p, .user-order-table-old p{
+        font-size: 12.5px;
+    }
 }
