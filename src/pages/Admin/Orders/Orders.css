@@ -206,4 +206,12 @@
     .orders-table-format select{
       padding: 12px;
   }
+  .orders-table-format{
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .orders-table-cross-div{
+    text-align: right;
+  }
 }

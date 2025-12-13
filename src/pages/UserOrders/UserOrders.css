@@ -1,19 +1,10 @@
 .user-orders{
     margin: 60px 0;
-    overflow-x: hidden;
-}
-
-.user-order-info,
-.user-order-info p,
-.user-order-info-old-long,
-.list-table-format p {
-  overflow-wrap: anywhere;
-  word-break: break-word;
 }
 
 .user-order-table{
     display: grid;
-    grid-template-columns: 1fr 2.25fr 0.75fr;
+    grid-template-columns: 1.5fr 2fr 0.75fr;
     align-items: center;
     gap: 10px;
     padding: 15px 15px;
@@ -180,7 +171,7 @@
         width: 100%;
     }
     .user-order-table{
-        font-size: 11px;
+        font-size: 13px;
     }
     .user-order-info-old-long{
         width: 90%;
