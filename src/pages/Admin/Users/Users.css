@@ -14,7 +14,7 @@
 .admin-users-buttons-button{
     padding: 10px;
     border: 1px solid #cacaca;
-    min-width: max(14%, 100px);
+    min-width: max(14%, 80px);
     cursor: pointer;
     text-align: center;
     font-size: 14px;
@@ -116,7 +116,7 @@
         margin-bottom: 40px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
     .admin-users-search{
         width: 100%;

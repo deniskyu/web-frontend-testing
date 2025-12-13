@@ -162,7 +162,7 @@
 
     .navbar-logo{
         width: auto;
-        height: 64px;
+        height: 60px;
     }
     .navbar-buttons-container li{
         font-size: 15px;
@@ -191,6 +191,10 @@
     .navbar-right-container button:hover{
         padding: 13px 38px;
     }
+
+    .navbar-username{
+        font-size: 14.5px;
+    }
 }
 
 @media (max-width: 768px){
@@ -200,7 +204,7 @@
 
     .navbar-logo{
         width: auto;
-        height: 62px;
+        height: 56px;
     }
 
     .navbar-buttons-container{
@@ -234,5 +238,9 @@
 
     .navbar-right-container button:hover{
         padding: 12px 36px;
+    }
+
+    .navbar-username{
+        font-size: 14px;
     }
 }

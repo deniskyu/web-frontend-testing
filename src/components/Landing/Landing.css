@@ -56,6 +56,12 @@
     .landing-container{
         max-width: 45%;
     }
+    .landing{
+        height: 40vw;
+    }
+    .landing-header{
+        font-size: max(3.3vw, 18.5px);
+    }
 }
 
 @media (max-width: 768px){
@@ -68,6 +74,11 @@
     }
     .landing-button{
         padding: 2.2vw 4.4vw;
+    }
+    .landing{
+        height: 42vw;
+    }\    .landing-header{
+        font-size: max(3vw, 17.5px);
     }
 }
 

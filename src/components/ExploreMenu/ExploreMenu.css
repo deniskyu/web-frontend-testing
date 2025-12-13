@@ -43,19 +43,24 @@
     scrollbar-width: none; 
 }
 
-.category-box{
+.category-box {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 8vw;
     min-width: 90px;
+    align-items: center;
 }
 
-.category-image{
-    border-radius: 50%;
+.category-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;      /* Enforces square */
+    object-fit: cover;        /* Crops properly */
+    border-radius: 50%;       /* Circle */
     border: 2px solid #eaaf1b;
     transition: 0.3s;
 }
+
 
 .category-image:hover{
     border-radius: 50%;
