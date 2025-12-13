@@ -13,7 +13,7 @@
 
 .user-order-table{
     display: grid;
-    grid-template-columns: minmax(0, 1.5fr) minmax(0, 2fr) minmax(0, 0.75fr);
+    grid-template-columns: 1fr 2.25fr 0.75fr;
     align-items: center;
     gap: 10px;
     padding: 15px 15px;
@@ -27,7 +27,7 @@
 
 .user-order-table-old{
     display: grid;
-    grid-template-columns: minmax(0, 1.5fr) minmax(0, 3fr);
+    grid-template-columns: 1.5fr 3fr;
     align-items: center;
     gap: 10px;
     padding: 15px 15px;
@@ -180,7 +180,7 @@
         width: 100%;
     }
     .user-order-table{
-        font-size: 13px;
+        font-size: 11px;
     }
     .user-order-info-old-long{
         width: 90%;
@@ -201,5 +201,4 @@
     .user-orders-order-h2{
         text-align: center;
     }
-
 }
