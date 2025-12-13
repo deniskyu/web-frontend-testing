@@ -202,22 +202,4 @@
         text-align: center;
     }
 
-    
-    .user-order-table,
-    .user-order-table-old{
-      grid-template-columns: 1fr;
-      text-align: left;
-    }
-  
-    .user-orders-delivery-logo{
-      position: static;
-      width: 26px;
-      height: 24px;
-      margin-left: auto;
-    }
-  
-    .user-order-status{
-      flex-direction: row;
-      justify-content: space-between;
-    }
 }
