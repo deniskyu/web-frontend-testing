@@ -53,6 +53,8 @@ axiosAuthGuard.interceptors.response.use(
       isRefreshing = false;
       processQueue(err);
 
+      window.location.reload(); // nj dc 
+
       return Promise.reject(err);
     }
   }

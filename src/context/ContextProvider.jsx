@@ -171,6 +171,19 @@ export default function ContextProvider({children}){
         loadUserOrders();
     }, [])
 
+    useEffect(() => {
+        const onFocus = async () => {
+          await loadUserInfo();
+          await loadUserOrders();
+        };
+      
+        window.addEventListener('focus', onFocus);
+      
+        return () => {
+          window.removeEventListener('focus', onFocus);
+        };
+    }, []);
+
 
     const contextValue = {
         itemList,
